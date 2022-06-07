@@ -62,6 +62,12 @@ body::-webkit-scrollbar-thumb {
 /*----- Breakpoints -----*/
 
 @media (max-width: 678px) {
+
+    nav .navbar-collapse .navbar-nav .nav-item a.nav-link {
+        color: var(--text-dark);
+        transition: all .5s;
+        padding-left: 30px !important;
+    }
     nav {
         background-color: #fff !important;
         opacity: 1;
@@ -91,10 +97,21 @@ body::-webkit-scrollbar-thumb {
         width: 130px;
         height: 130px;
     }
+
+    .title h1::before {
+        display: none !important;
+    }
+
 }
 
 
 @media (min-width: 679px) and ( max-width: 1000px) {
+    nav .navbar-collapse .navbar-nav .nav-item a.nav-link {
+        color: var(--text-dark);
+        transition: all .5s;
+        padding-left: 30px !important;
+    }
+
     nav {
         background-color: #fff !important;
         opacity: 1;
