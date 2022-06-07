@@ -5,23 +5,23 @@
 
 :root {
     --main-text-color: rgb(173, 173, 173);
-    --text-dark: #000;
-    --green-color: #198754;
     --secondary-color: #ccc;
     --accent-color: #fff5f5;
+    --text-dark: #000;
+    --green-color: #198754;
 }
 
 *,
 body {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
 body{
-overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 /*----- Customise the scrollbar  -----*/
@@ -60,7 +60,6 @@ body::-webkit-scrollbar-thumb {
 
 
 /*----- Breakpoints -----*/
-
 @media (max-width: 678px) {
 
     nav .navbar-collapse .navbar-nav .nav-item a.nav-link {
