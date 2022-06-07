@@ -1,5 +1,7 @@
 @import '_homepage.css';
 @import '_about.css';
+@import '_projects.css';
+@import '_contact.css';
 
 :root {
     --main-text-color: rgb(173, 173, 173);
@@ -16,6 +18,10 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+body{
+overflow-x: hidden;
 }
 
 /*----- Customise the scrollbar  -----*/
@@ -37,9 +43,58 @@ body::-webkit-scrollbar-thumb {
     border-radius: 6px;
 }
 
+.title{
+    position: absolute;
+}
+
+.title h1::before {
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: var(--text-dark);
+    position: absolute;
+    left: -110px;
+    top: 35px;
+}
+
+
 
 /*----- Breakpoints -----*/
-@media (max-width: 1000px) {
+
+@media (max-width: 678px) {
+    nav {
+        background-color: #fff !important;
+        opacity: 1;
+        z-index: 1000;
+        box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+    } 
+
+    .info{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+  
+    .profile-img {
+        position: absolute;
+        top:55%;
+        right: 35%;
+        width: 150px;
+        height: 150px;
+        border: 10px solid var(--green-color);
+    }
+
+    .profile-img img {
+        position: absolute;
+        top: 1px;
+        right: -2px;
+        width: 130px;
+        height: 130px;
+    }
+}
+
+
+@media (min-width: 679px) and ( max-width: 1000px) {
     nav {
         background-color: #fff !important;
         opacity: 1;
@@ -58,15 +113,11 @@ body::-webkit-scrollbar-thumb {
     }
 
     .profile-img {
-        /* background-size: contain;
-        background-position: center; */
         position: absolute;
         top: 45%;
         right: 25%;
         width: 270px;
         height: 260px;
-        /* border: 15px solid var(--green-color);
-        border-radius: 100%; */
     }
 
     .profile-img img {
@@ -75,7 +126,6 @@ body::-webkit-scrollbar-thumb {
         right: -1px;
         width: 245px;
         height: 240px;
-        /* border-radius: 100%; */
     }
 
     .about-title {
@@ -96,7 +146,14 @@ body::-webkit-scrollbar-thumb {
         left: -40px !important;
         top: 35px;
     }
+    .title h1::before {
+        display: none !important;
+    }
 
+    .contact{
+        margin-top: 100px;
+    }
+    
 }
 
 
@@ -110,15 +167,11 @@ body::-webkit-scrollbar-thumb {
     }
 
     .profile-img {
-        /* background-size: contain;
-        background-position: center; */
         position: absolute;
         top: 25%;
         right: 33%;
         width: 300px;
         height: 300px;
-        /* border: 15px solid var(--green-color);
-        border-radius: 100%; */
     }
 
     .profile-img img {
@@ -127,6 +180,9 @@ body::-webkit-scrollbar-thumb {
         right: -1px;
         width: 270px;
         height: 270px;
-        /* border-radius: 100%; */
+    }
+
+    .contact{
+        margin-top: 100px;
     }
 }

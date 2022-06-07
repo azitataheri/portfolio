@@ -1,0 +1,53 @@
+.projects .project {
+    position: relative;
+    background-color: var(--accent-color);
+    min-height: 230px;
+}
+
+
+.projects .project .pro-info {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    padding: 3px 0;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: var(--green-color);
+    border: none;
+}
+
+.projects .project .pro-info:hover{
+ background-color: var(--green-color);
+ color: #fff;
+}
+.projects .project img {
+    display: block;
+    padding: 10%;
+    width: 100%;
+    background-size: cover;
+}
+
+.overlay{
+    background-color: var(--green-color);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    opacity: .8;
+    transition: all .8s;
+    border-radius: 4px;
+}
+
+.pro-link{
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    background: rgb(231, 205, 171);
+    padding: 5px 20px;
+    border: 0;
+    border-radius: 3px;
+}
+.projects .project:hover .overlay{
+    display: block;
+}

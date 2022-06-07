@@ -1,0 +1,16 @@
+.contact{
+    margin-top: 200px;
+}
+
+.contact-details{
+    padding: 50px;
+    position: relative;
+}
+
+.pinned{
+    position: absolute;
+    right: -100px;
+    background-color: red;
+    top: 147px;
+    padding: 20px;
+}
