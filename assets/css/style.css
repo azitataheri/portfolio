@@ -101,6 +101,13 @@ body::-webkit-scrollbar-thumb {
         display: none !important;
     }
 
+    .contact{
+        margin-top: 70px;
+    }
+
+    .contact-details{
+        margin: 10px;
+    }
 }
 
 
