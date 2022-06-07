@@ -46,7 +46,8 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-5 col-xl-6 px-0 left-wrapper">
+      <div class="col-sm-12 col-xl-6 px-0">
+
         <!-- Start Menu -->
         <div>
           <nav class="navbar navbar-expand-lg">
@@ -77,25 +78,36 @@
               </div>
             </div>
           </nav>
-          <div class="info">
-            <h1>Azit<span class="word">a</span> Taheri</h1>
-            <h5 class="text-secondary">Front-End Developer based in Iran</h5>
-            <div class="mt-5">
-              <button class="p-3 shadow-sm rounded" id="cta">MORE ABOUT ME <i class="fas fa-arrow-right"></i></button>
-              <button class="p-3 shadow-sm rounded" id="contact">CONTACT ME</button>
-            </div>
-          </div>
         </div>
         <!-- End Menu-->
+
       </div>
+      <div class="col-sm-12 d-none"></div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6 px-0 left-wrapper">
+        <div class="info">
+          <h1 class="wow slideInLeft py-3" data-wow-duration="2s" data-wow-delay="1s">Azit<span>a</span> Taheri</h1>
+          <h5 class="text-secondary">Front-End Developer based in Iran</h5>
+          <div class="mt-5">
+            <button class="p-3 shadow-sm rounded" id="cta">MORE ABOUT ME <i class="fas fa-arrow-right"></i></button>
+            <button class="p-3 shadow-sm rounded" id="contact">CONTACT ME</button>
+          </div>
+        </div>
+      </div>
+
       <!-- Start profile image -->
-      <div class="col-lg-7 col-xl-6 px-0 img-container right-wrapper">
+      <div class="col-lg-6 px-0 img-container right-wrapper">
         <div class="profile-img shadow-sm">
           <img src="./assets/img/profile.png" alt="azita taheri profile image">
         </div>
       </div>
       <!-- End profile image -->
+
     </div>
+
     <!-- Start footer -->
     <div class="row text-center">
       <footer class="fixed-bottom py-1">
@@ -108,7 +120,18 @@
       </footer>
     </div>
     <!-- End footer -->
+
   </div>
+
+  <!-- Start Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!-- End Scripts -->
+
 </body>
 
 </html>
